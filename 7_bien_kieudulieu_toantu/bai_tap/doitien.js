@@ -10,7 +10,7 @@ function doitien() {
         doi = 'Số tiền sau khi đổi là: ' + (tien/15000) + '€';
     }
     else if(FromC == 'EUR' && To == 'USD'){
-        doi = 'Số tiền sau khi đổi là: ' + (tien*1,5) + '$';
+        doi = 'Số tiền sau khi đổi là: ' + (tien*0.5) + '$';
     }     
     else if(FromC == 'EUR' && To == 'VND'){
         doi = 'Số tiền sau khi đổi là: ' + (tien*15000) + 'Đ';
@@ -19,7 +19,7 @@ function doitien() {
         doi = 'Số tiền sau khi đổi là: ' + (tien/23000) + '$';
     }     
     else if(FromC == 'USD' && To == 'EUR'){
-        doi = 'Số tiền sau khi đổi là: ' + (tien*1,5) + '€';
+        doi = 'Số tiền sau khi đổi là: ' + (tien/0,5) + '€';
     }     
     
     else if(FromC == 'VND'){
