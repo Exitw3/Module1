@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Overview</title>
+</head>
+<body>
+    <!-- Các cách để nhứng mã js vào trong html 
+        cách 1 (inline): thông qua event của element
+        cách 2 (internal): thông qua thẻ script đặt trọng file HTML
+        cách 3 (external): tạo ra 1 file có phần mở rộng là .js và nhúng vào HTML thông qua thẻ script và thuộc tính src
+    -->
+
+    <button
+        onmouseover="this.innerText = new Date()"
+        onmouseout="this.innerText = 'Hover me to show datetime'"
+    >Hover me to show datetime</button>
+    <h1
+        onmouseover="this.innerText = new Date()"
+        onmouseout="this.innerText = 'Hover me to show datetime'"
+    >Hover me to show datetime</h1>
+
+    <input type="text" id=""
+        onfocus="this.style.padding = '10px'"
+    >
+
+        <input type="color" id="color"
+        oninput="changeColor()"
+    >
+
+    <p onclick="this.style.color = 'green'"
+        ondblclick="this.style.color = 'blue'; this.style.fontSize = '30px'; "
+    >Click me!</p>
+
+    <input type="password" name="pw" id="haha">
+    <label><input type="checkbox" name="showpw" onchange="showPassword()"> Show password</label> 
+
+    <script>
+        function changeColor(){
+            document.getElementById('haha').style.borderColor = 
+                document.getElementById('color').value;
+            document.getElementById('haha').style.backgroundColor = 
+                document.getElementById('color').value;
+        }
+
+        // function showPassword(){
+        //     if(document.getElementsByName('showpw')[0].checked == true){
+        //         document.getElementsByName('pw')[0].type = 'text';
+        //     }
+        //     else{
+        //         document.getElementsByName('pw')[0].type = 'password';
+        //     }
+        // }
+    </script>
+    <script src="site.js"></script>
+</body>
+</html>
