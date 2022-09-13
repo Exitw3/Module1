@@ -7,20 +7,28 @@
     <title>Bài 8</title>
 </head>
 <body>
-    <div class="bt-8">
-        <form onclick="return false">
+    <form onclick="return false">
         <table>
                 <caption><h3>Kiểm tra tuổi</h3></caption>
                 <tr>
-                    <td><input type="number" class="bt-8-age" min="1" required/></td>
-                    <td><input onclick=handle() type="submit" id="bt-8" min="1" value="Submit" /></td>
+                    <td><input type="number"equired/></td>
+                    <td><input onclick=handle() value="Submit" /></td>
                 </tr>
-            </table>
-            <div class="bt-8-result"></div>
-        </form>
-    </div>
+        </table>
+    </form>
 </body>
-<script src="demo.js">
+<script>
+    handle(){
+        let kq = document.getElementById('kq')
+        let c = Number(document.getElementById('c').value) ;
 
+    let id = event.srcElement.id
+    let age8 = document.querySelector('.bt-8-age').value
+            if(age8 < 120 && age8 > 0){
+                document.querySelector('.bt-8-result').innerHTML = `${age8} là tuổi một người`
+            }else{
+                document.querySelector('.bt-8-result').innerHTML = ''
+            }
+        }
 </script>
 </html>
