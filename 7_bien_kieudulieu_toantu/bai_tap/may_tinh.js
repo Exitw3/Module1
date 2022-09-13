@@ -3,7 +3,7 @@ function cong(){
     let numberB = Number(document.getElementById("NumberB").value);
     let Result;
 
-    Result = 'Result Division:  ' + (numberA + numberB);
+    Result = 'Result Division:  ' + (numberA +numberB);
     document.getElementById("Result").innerHTML = Result;
 }
 function tru(){

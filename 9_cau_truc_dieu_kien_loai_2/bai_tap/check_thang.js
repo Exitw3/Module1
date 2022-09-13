@@ -20,16 +20,16 @@ function check_thang() {
         case thang_8:
         case thang_10:
         case thang_12:
-            document.getElementById("result").innerHTML = "Tháng" + thang + "Có 31 Ngày" 
+            document.getElementById("result").innerHTML = "Tháng " + thang + " Có 31 Ngày" 
             break;
         case thang_2:
-            document.getElementById("result").innerHTML = "Tháng" + thang + "Có 28 hoặc 29 Ngày" 
+            document.getElementById("result").innerHTML = "Tháng " + thang + " Có 28 hoặc 29 Ngày" 
             break;
         case thang_4:     
         case thang_6:     
         case thang_9:     
         case thang_11:
-            document.getElementById("result").innerHTML = "Tháng" + thang + "Có 30 Ngày" 
+            document.getElementById("result").innerHTML = "Tháng " + thang + " Có 30 Ngày" 
             break;
             default:
                 document.getElementById("result").innerHTML = "Vui lòng nhập lại tháng"   
