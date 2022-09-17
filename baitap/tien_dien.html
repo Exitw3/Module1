@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Tính tiền điện cho </h1>
+    <label>Nhập số điện tiêu thụ</label>
+    <input type="namber" id="kWh">  
+    <button onclick="tinhtien()">Kiểm Tra</button>
+    <p id="result"></p>
+</body>
+<script>
+    function tinhtien(){
+    let bac=[1,51,101,201,301,401]
+    let sotien=[1.678,1.734,2.014,2.536,2.834,2.927]
+    let kWh = parseFloat(document.getElementById('kWh').value)
+    var b = kWh
+    var boi=0;
+    for (var i=(bac.length-1); i>=0; i--) {
+        if (kWh > bac[i]){
+            let a=b-bac[i]+1
+            boi= boi + a*sotien[i]
+            b = b - a
+            console.log(a*sotien[i])
+        }
+    }
+    console.log(boi)
+    document.getElementById('result').innerHTML= `${boi*1000} VND`
+    }
+    function reset(){
+        document.getElementById('result').innerHTML = ''
+        document.getElementById('kWh').value = ''
+    }
+</script>   
+</html>
