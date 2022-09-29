@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tbody>
+        <tr>
+            <td><label>Nhập</label></td>
+            <td><input type="number" id="number"></td>
+        </tr>
+        <tr>
+            <td><label>Xuât</label></td>
+            <td><input type="number" id="result"></td>
+        </tr>
+        <tr>
+            <td><button onclick="demo()">Submit</button></td>
+        </tr>
+    </tbody>
+    </table>
+    <script>
+        function demo() {
+            let number;
+            let nghichDao = 0;
+            do{
+            number = document.getElementById("number").value;
+            }while(n != 0){
+            nghichDao = nghichDao * 10 + (number % 10);
+            n/=10;
+            }
+            document.getElementById('result').value = nghichDao;
+        }
+    </script>
+</body>
+</html>

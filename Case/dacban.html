@@ -1,0 +1,53 @@
+<div class="order-section" style="display: flex;">
+    <div class="show-item">
+        <table class="tb-order">
+            <tbody>
+                <tr>
+                    <th>Ngày</th>
+                    <th>Tên Bạn</th>
+                </tr>
+                <tr>
+                    <td><input type="date" onkeypress="pressEnter(event)" name="" id="dateOrder"></td>
+                    <td><input type="text" onkeypress="pressEnter(event)" name="" id="nameOrder" placeholder="Name"></td>
+
+                </tr>
+                <tr>
+                    <th>Giờ</th>
+                    <th>Điện Thoại</th>
+
+                </tr>
+                <tr>
+                    <td><input type="time" onkeypress="pressEnter(event)"  name="" id="timeOrder"></td>
+                    <td><input type="number" onkeypress="pressEnter(event)" name="" id="phoneOrder" placeholder="Phone"></td>
+                </tr>
+                <tr>
+                    <th>Số người</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="" onkeypress="pressEnter(event)" id="personOrder" placeholder="Số Người Trong Đoàn"></td>
+                    <td><input type="text" name="" onkeypress="pressEnter(event)" id="emailOrder" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="btn-order" onclick="orderButton()">Đặt Bàn</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="show-booking">
+        <table border="1" class="show-order">
+            <thead>
+                <tr>
+                    <th class="th-show">STT</th>
+                    <th class="th-show">Ngày</th>
+                    <th class="th-show">Tên</th>
+                    </tr>
+            </thead>
+            <tbody class="show-order1">
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</div>
+</section>
